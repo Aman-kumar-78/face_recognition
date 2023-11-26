@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h3 class="mt-5">Live Streaming</h3>
+                <video width="100%" controls>
+                    <source src="{{ url_for('video_feed') }}" type="multipart/x-mixed-replace; boundary=frame">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
